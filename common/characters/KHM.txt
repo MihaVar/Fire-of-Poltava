@@ -1,0 +1,17 @@
+characters={
+	KHM_gabbi = {
+		name="Gabbi"
+		portraits={
+			civilian={
+				large="GFX_gabbi"
+			}
+		}
+		country_leader={
+		    traits = { 
+			}
+			ideology=centrist
+			expire="2222.1.1.1"
+		}
+	}
+	
+}

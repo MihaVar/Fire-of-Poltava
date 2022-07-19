@@ -1,0 +1,17 @@
+characters={
+	CHE_mer = {
+		name="Anatoliy Bondarenko"
+		portraits={
+			civilian={
+				large="GFX_mer"
+			}
+		}
+		country_leader={
+		    traits = { 
+			}
+			ideology=centrist
+			expire="2222.1.1.1"
+		}
+	}
+	
+}

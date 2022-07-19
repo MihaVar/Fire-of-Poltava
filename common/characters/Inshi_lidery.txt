@@ -1,0 +1,180 @@
+characters={
+	GAL_Koshulinsky={
+		name="Ruslan Koshylinsky"
+		portraits={
+			civilian={
+				large="GFX_Kosh"
+			}
+		}
+		country_leader={
+			ideology=national_democracy
+			expire="2222.1.1.1"
+		}
+	}
+	
+	PUC_Puchkov={
+		name="Dmitriy Puchkov"
+		portraits={
+			civilian={
+				large="GFX_puchkov"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_socialism
+			expire="2222.1.1.1"
+		}
+	}
+	
+	PUC_Sanych={
+		name="Klim Zhukov"
+		portraits={
+			civilian={
+				large="GFX_zhukov"
+			}
+		}
+		country_leader={
+			ideology=communism
+			expire="2222.1.1.1"
+		}
+	}
+	
+	KHA_Avakov={
+		name="Arsen Avakov"
+		portraits={
+			civilian={
+				large="GFX_Kvak"
+			}
+		}
+		country_leader={
+			ideology=centrist
+			expire="2222.1.1.1"
+		}
+	}
+	
+	ODE_Voron={
+		name="Igor Voronchenko"
+		portraits={
+			civilian={
+				large="GFX_More"
+			}
+		}
+		country_leader={
+			ideology=admiralty_council
+			expire="2222.1.1.1"
+		}
+	}
+	
+	OPZ_Medvedchuk={
+		name="Victor Medvedchuk"
+		portraits={
+			civilian={
+				large="GFX_Medvid"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="2222.1.1.1"
+		}
+	}
+	
+	UAR_Poroshenko={
+		name="Petro Poroshenko"
+		portraits={
+			civilian={
+				large="GFX_Poroh"
+			}
+		}
+		country_leader={
+			ideology=national_democracy
+			expire="2222.1.1.1"
+		}
+	}
+	
+	UAS_Lyashko={
+		name="Oleg Lyashko"
+		portraits={
+			civilian={
+				large="GFX_Lyash"
+			}
+		}
+		country_leader={
+			ideology=agrarianism
+			expire="2222.1.1.1"
+		}
+	}
+	
+	UKR_Zelensky={
+		name="Volodymir Zelensky"
+		portraits={
+			civilian={
+				large="GFX_Zel"
+			}
+		}
+		country_leader={
+		    traits = { legitimate_leader }
+			ideology=liberalism
+			expire="2222.1.1.1"
+		}
+	}
+    
+	VOL_Lucenko={
+		name="Yuriy Lucenko"
+		portraits={
+			civilian={
+				large="GFX_adad"
+			}
+		}
+		country_leader={
+			ideology=centrist
+			expire="2222.1.1.1"
+		}
+	}
+
+	SUM_council = {
+		name="Council"
+		portraits={
+			civilian={
+				large="GFX_council"
+			}
+		}
+		country_leader={
+		    traits = { 
+			}
+			ideology=liberalism
+			expire="2222.1.1.1"
+		}
+	}
+
+	ZAP_taylor = {
+		name="Taylor"
+		portraits={
+			civilian={
+				large="GFX_taylor"
+			}
+		}
+		country_leader={
+		    traits = { 
+
+			}
+			ideology=liberalism
+			expire="2222.1.1.1"
+		}
+	}
+
+	TRN_huy = {
+		name="Huy"
+		portraits={
+			civilian={
+				large="GFX_huy"
+			}
+		}
+		country_leader={
+		    traits = { 
+			}
+			ideology=authoritarian_socialism
+			expire="2222.1.1.1"
+		}
+	}
+
+	
+}
