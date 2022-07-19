@@ -1,0 +1,309 @@
+focus_tree = {
+	id = zsu-start
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AFU
+		}
+	}
+	#call on the reserves
+	focus = {
+		id = AFU_call_on_the_reserves
+		icon = GFX_goal_generic_small_arms
+		x = 11
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 1
+		prerequisite = { focus = AFU_mobilize_our_forces  }
+		
+		completion_reward = { add_manpower = 1000 }
+	}
+
+	#Prepare for the worst
+	focus = {
+		id = AFU_prepare_for_the_worst
+		icon = GFX_AFU_prepare_for_the_worst-412
+		x = 4
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 2
+		prerequisite = { focus = AFU_test_the_separatists  }
+		
+		completion_reward = { army_experience = 20
+		add_equipment_to_stockpile = { type = infantry_equipment_1
+				amount = 1000
+				producer = AFU}
+	}
+	}
+
+	#Prepare the defences
+	focus = {
+		id = AFU_prepare_the_defences
+		icon = GFX_goal_generic_construct_military
+		x = 3
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 1
+		prerequisite = { focus = AFU_prepare_for_the_worst  }
+		mutually_exclusive = { focus = AFU_take_them_by_surprise  }
+		
+		completion_reward = { add_ideas = AFU_defensive_strategy }
+	}
+
+	#Open the warehouses
+	focus = {
+		id = AFU_open_the_warehouses
+		icon = GFX_goal_continuous_repairments
+		x = 11
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 2
+		
+		completion_reward = { custom_effect_tooltip = "Adds decisions to open up old warehouses" }
+		prerequisite = { focus = AFU_call_on_the_reserves  }
+	}
+
+	#Millitrary advisors
+	focus = {
+		id = AFU_millitrary_advisors
+		icon = GFX_goal_tripartite_pact
+		x = 7
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 2
+		completion_reward = { custom_effect_tooltip = zap_3
+		hidden_effect = { add_ideas = ZAP_advisors } }
+		prerequisite = { focus = AFU_negotiate_with_zaporizhia  }
+		mutually_exclusive = { focus = AFU_take_what_we_can  }
+	}
+	
+
+	#Strike first
+	focus = {
+		id = AFU_strike_first
+		icon = GFX_focus_secret_rearmament
+		x = 5
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = { declare_war_on = {
+    target = DNR
+    type = annex_everything
+     }
+     }
+	 cost = 2
+	 
+		prerequisite = { focus = AFU_take_them_by_surprise  }
+	}
+
+	#And now we wait...
+	focus = {
+		id = AFU_andnowwewait
+		icon = GFX_goal_generic_neutrality_focus
+		x = 3
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = AFU_prepare_the_defences  }
+		cost = 1
+		
+		completion_reward = { add_stability = 0.05 }
+	}
+
+	#On our own
+	focus = {
+		id = AFU_on_our_own
+		icon = GFX_AFU_on_our_own-412
+		x = 5
+		y = 0
+		completion_reward = { country_event = { id = afu.1 } }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 1
+	}
+
+	#Proclaim a state of emergency
+	focus = {
+		id = AFU_proclaim_a_state_of_emergency
+		icon = GFX_AFU_proclaim_a_state_of_emergency-422
+		x = 5
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 1
+		completion_reward = { add_war_support = 0.05 }
+		prerequisite = { focus = AFU_on_our_own  }
+	}
+	
+
+	#Mobilize our forces
+	focus = {
+		id = AFU_mobilize_our_forces
+		icon = GFX_goal_rhineland
+		x = 11
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 2
+		prerequisite = { focus = AFU_proclaim_a_state_of_emergency  }
+		
+		completion_reward = { custom_effect_tooltip = AFU_newdiv
+		hidden_effect = {load_oob = AFU_2}  }
+	}
+
+	#Temporarily surpress human rights
+	focus = {
+		id = AFU_temporarily_surpress_human_rights
+		icon = GFX_goal_generic_political_pressure
+		x = 2
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 1
+		completion_reward = { add_stability = 0.05 }
+		prerequisite = { focus = AFU_proclaim_a_state_of_emergency  }
+	}
+
+	#Test the separatists
+	focus = {
+		id = AFU_test_the_separatists
+		icon = GFX_goal_generic_major_war
+		x = 4
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 2
+		completion_reward = { start_border_war = {
+    change_state_after_war = no
+    attacker = {
+        state = 155
+        num_provinces = 1
+        on_win = donbass_war.1
+        on_lose = donbass_war.2
+        on_cancel = japan_border_conflict.4
+    }
+				
+    defender = {
+        state = 152
+        num_provinces = 1
+        on_win = donbass_war.1
+        on_lose = donbass_war.2
+        on_cancel = japan_border_conflict.4
+    }
+    }
+    }
+		prerequisite = { focus = AFU_proclaim_a_state_of_emergency  }
+	}
+
+	#There's no time for opposition
+	focus = {
+		id = AFU_theresnotimeforopposition
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 1
+		completion_reward = { add_ideas = AFU_millitary_dictatorship }
+		prerequisite = { focus = AFU_temporarily_surpress_human_rights  }
+	}
+
+	#Take them by surprise
+	focus = {
+		id = AFU_take_them_by_surprise
+		icon = GFX_goal_generic_army_tanks
+		x = 5
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 2
+		
+		completion_reward = { hidden_effect = { load_oob = AFU_focus}
+        custom_effect_tooltip = AFU_newdiv_1		
+		}
+		prerequisite = { focus = AFU_prepare_for_the_worst  }
+		mutually_exclusive = { focus = AFU_prepare_the_defences  }
+	}
+
+	#Contact the government
+	focus = {
+		id = AFU_contact_the_government
+		icon = GFX_focus_generic_treaty
+		x = 8
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+	    }
+		cost = 1
+		completion_reward = { country_event = { id = afu.2 }}
+		prerequisite = { focus = AFU_proclaim_a_state_of_emergency  }
+	}
+
+	#Negotiate with Zaporizhia
+	focus = {
+		id = AFU_negotiate_with_zaporizhia
+		icon = GFX_goal_generic_alliance
+		x = 8
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 2
+		completion_reward = {custom_effect_tooltip = zap_2}
+		prerequisite = { focus = AFU_contact_the_government  }
+	}
+
+	#Millitary administration
+	focus = {
+		id = AFU_millitary_administration
+		icon = GFX_AFU_millitary_administration-149
+		x = 1
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 1
+		completion_reward = { swap_ideas = { 
+  remove_idea = AFU_disorganised_administration 
+  add_idea = AFU_millitary_administration
+}}
+		prerequisite = { focus = AFU_theresnotimeforopposition  }
+	}
+
+	#Take what we can
+	focus = {
+		id = AFU_take_what_we_can
+		icon = GFX_goal_generic_army_artillery2
+		x = 9
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		cost = 1
+		mutually_exclusive = { focus = AFU_millitrary_advisors  }
+		completion_reward = {custom_effect_tooltip = zap_1}
+		prerequisite = { focus = AFU_negotiate_with_zaporizhia  }
+	}
+
+}
