@@ -27,5 +27,5 @@ donbass_war = {
 			base = 0
 		}
 	}
-	}
+
 

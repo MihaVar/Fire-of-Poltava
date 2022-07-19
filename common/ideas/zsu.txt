@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+
+		AFU_disorganised_administration = {
+			picture = AFU_disorganised_administration-1061
+			modifier = {
+				political_power_gain = -0.3
+stability_factor = -0.3
+
+			}
+		}
+		
+		AFU_millitary_administration = {
+			picture = AFU_disorganised_administration-1061
+			modifier = {
+				political_power_gain = -0.1
+                stability_factor = -0.1
+				consumer_goods_factor = -0.05
+
+			}
+		}
+		
+		AFU_millitary_dictatorship = {
+			picture = AFU_disorganised_administration-1061
+			modifier = {
+				political_power_gain = -0.1
+                stability_factor = -0.2
+				consumer_goods_factor = -0.05
+
+			}
+		}
+
+		AFU_defensive_strategy = {
+			picture = AFU_defensive_strategy-1084
+			modifier = {
+				land_reinforce_rate = 0.3
+defence = 0.5
+attack = -0.1
+			}
+		}
+		
+		ZAP_advisors = {
+			picture = AFU_disorganised_administration-1061
+			modifier = {
+				army_attack_factor = 0.1
+				army_speed_factor = 0.1
+				army_morale_factor = 0.2
+
+			}
+		}
+	}
+}

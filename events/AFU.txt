@@ -1,0 +1,30 @@
+add_namespace = afu
+
+country_event = {
+	id = afu.1
+	title = "On our own"
+	desc = "After the distabilisation and escalation of civil unrest in Ukraine, we weren't able to contact the government, and aren't sure what is even happening. However, we do know that right now Ukraine is threatened by separatist menace. We must fight on our own until we can re=establish contact with Kyiv"
+
+	picture = GFX_report_event_carp_rada
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "We have to start preparing"
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = afu.2
+	title = "Contacting the government"
+	desc = "After a couple of weeks we finally managed to establish a stable contact with Kyiv. From what we've been told, political situation is still uncertain, so we shouldn't rely on the Kyiv administration too much. We don't want to get our hands dirty in their political games. "
+
+	picture = GFX_report_event_carp_rada
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "We have to start preparing"
+		add_political_power = 50
+	}
+}
+
