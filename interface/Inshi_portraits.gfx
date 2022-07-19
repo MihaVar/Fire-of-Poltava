@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_Papich"
 		texturefile = "gfx/leaders/RIV/Papich.dds"
 	}
+	spriteType = {
+		name = "GFX_adad"
+		texturefile = "gfx/leaders/VOL/adad.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_Razum"
@@ -94,7 +98,7 @@ spriteTypes = {
 
 	# CRI
 	spriteType = {
-		name = "GFX_aksyonov"
+		name = "GFX_Aksyonov"
 		texturefile = "gfx/leaders/CRI/Aksyonov.dds"
 	}
 

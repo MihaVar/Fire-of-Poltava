@@ -72,10 +72,29 @@ if = {
 	}
 }
 
+set_politics = {	
+	ruling_party = conservative_democracy
+	last_election = "1939.9.12"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_party_name = { ideology = conservative_democracy
+    long_name = "European Solidarity"
+	name = "YeS" }
+
+	recruit_character = UAR_Poroshenko
+
 set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 50
+	social_democracy = 0
+	oligarchy = 30
+	centrism = 0
+	conservative_democracy = 70
+	liberal_democracy = 0
+	millitary_junta = 0
+	nationalism = 0
+	radical_socialism = 0
 }
 
 

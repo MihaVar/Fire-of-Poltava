@@ -11,6 +11,19 @@ characters={
 			expire="2222.1.1.1"
 		}
 	}
+	CRI_aksyonov = {
+		name="Aksyonov"
+		portraits={
+			civilian={
+				large="GFX_Aksyonov"
+			}
+		}
+		country_leader={
+		    
+			ideology=national_democracy
+			expire="2222.1.1.1"
+		}
+	}
 	
 	PUC_Puchkov={
 		name="Dmitriy Puchkov"
@@ -72,7 +85,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=national_democracy
 			expire="2222.1.1.1"
 		}
 	}
@@ -131,7 +144,7 @@ characters={
 	}
 
 	SUM_council = {
-		name="Council"
+		name="City Council"
 		portraits={
 			civilian={
 				large="GFX_council"
@@ -140,7 +153,7 @@ characters={
 		country_leader={
 		    traits = { 
 			}
-			ideology=liberalism
+			ideology=centrist
 			expire="2222.1.1.1"
 		}
 	}
@@ -162,7 +175,7 @@ characters={
 	}
 
 	TRN_huy = {
-		name="Huy"
+		name="Vadym Krasnoselsky"
 		portraits={
 			civilian={
 				large="GFX_huy"
@@ -172,6 +185,36 @@ characters={
 		    traits = { 
 			}
 			ideology=authoritarian_socialism
+			expire="2222.1.1.1"
+		}
+	}
+
+	KHM_gabbi = {
+		name="Gabbi"
+		portraits={
+			civilian={
+				large="GFX_gabbi"
+			}
+		}
+		country_leader={
+		    traits = { 
+			}
+			ideology=centrist
+			expire="2222.1.1.1"
+		}
+	}
+
+	CHE_mer = {
+		name="Anatoliy Bondarenko"
+		portraits={
+			civilian={
+				large="GFX_mer"
+			}
+		}
+		country_leader={
+		    traits = { 
+			}
+			ideology=centrist
 			expire="2222.1.1.1"
 		}
 	}

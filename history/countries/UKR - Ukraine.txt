@@ -72,41 +72,27 @@ if = {
 	}
 }
 
+set_politics = {	
+	ruling_party = liberal_democracy
+	last_election = "1939.9.12"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_party_name = { ideology = liberal_democracy
+    long_name = "Servant of the People - loyalists"
+	name = "Sluga Narodu" }
+
+	recruit_character = UKR_Zelensky
+
 set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 50
-}
-
-create_country_leader = {
-	name = "Kost Levytsky"
-	desc = ""
-	picture = GFX_portrait_Kost_Levytsky
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchyov"
-	desc = ""
-	picture = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = GFX_portrait_Stepan_Bandera
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
+	social_democracy = 0
+	oligarchy = 15
+	centrism = 30
+	conservative_democracy = 5
+	liberal_democracy = 50
+	millitary_junta = 0
+	nationalism = 0
+	radical_socialism = 0
 }
