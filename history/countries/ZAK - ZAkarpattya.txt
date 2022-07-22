@@ -73,10 +73,23 @@ if = {
 }
 
 set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 50
+	centrism = 40
+	nationalism = 30
+	liberal_democracy = 30
 }
+set_politics = {	
+	ruling_party = centrism
+	last_election = "1939.9.12"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_party_name = { ideology = centrism
+    long_name = "Transcarpathian administration"
+	name = "Zakarpatska administraciya" }
+
+	recruit_character = ZAK_Moskal
 
 
 

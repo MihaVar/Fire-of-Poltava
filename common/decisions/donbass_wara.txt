@@ -9,13 +9,17 @@ donbass_war = {
 		}
 
 		activation = {
-        has_country_flag = part_of_war
+        AFU = {has_country_flag = part_of_war}
     }
 	is_good = no
 	days_mission_timeout = 180
 
 		visible = {
 			always = yes
+			tag = AFU
+			tag = DPR
+			tag = LPR
+		
 		}
 
 		fire_only_once = yes

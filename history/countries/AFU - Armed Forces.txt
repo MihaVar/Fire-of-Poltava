@@ -84,6 +84,10 @@ if = {
 	name = "Millitary Council" }
 
 	recruit_character = AFU_Krivonis
+	recruit_character = AFU_shapt
+	recruit_character = AFU_malko
+	recruit_character = AFU_homa
+	recruit_character = AFU_Kohan
 
 set_popularities = {
 	social_democracy = 0

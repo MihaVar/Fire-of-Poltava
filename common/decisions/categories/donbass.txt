@@ -2,10 +2,16 @@ donbass_war = {
 	icon = GFX_decision_category_border_war
 	picture = GFX_Donbass_war
 	visible = {
+	    
 		tag = AFU
 		tag = DPR
 		tag = LPR
 	}
+	allowed = {
+	tag = AFU
+		tag = DPR
+		tag = LPR
+		}
 	
 }
 

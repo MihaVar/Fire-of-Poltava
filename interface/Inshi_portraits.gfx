@@ -40,6 +40,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_Moskal"
+		texturefile = "gfx/leaders/ZAK/Moskal.dds"
+	}
+	
+	
+	spriteType = {
 		name = "GFX_homchak"
 		texturefile = "gfx/leaders/AFU/homchak.dds"
 	}
