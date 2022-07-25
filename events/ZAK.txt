@@ -79,3 +79,4 @@ country_event = {
 	hidden_effect = { HUN = { load_oob = "HUN_2019" }
     HUN { declare_war_on = { target = D01 type = annex_everything}}	} }
 }
+#h
