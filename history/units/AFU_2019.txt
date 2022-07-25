@@ -48,7 +48,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13616
+		location = 305
 		division_template = "pikhotna brigada"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -60,7 +60,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 13616
+		location = 305
 		division_template = "pikhotna brigada"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -72,7 +72,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 13616
+		location = 305
 		division_template = "pikhotna brigada"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -84,7 +84,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 13616
+		location = 305
 		division_template = "pikhotna brigada"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -96,7 +96,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13607
+		location = 3026
 		division_template = "dobrovoltsy"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -108,7 +108,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13607
+		location = 3026
 		division_template = "dobrovoltsy"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -120,10 +120,43 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13607
+		location = 3026
 		division_template = "dobrovoltsy"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
 }
+
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AFU"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "AFU"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AFU" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	}

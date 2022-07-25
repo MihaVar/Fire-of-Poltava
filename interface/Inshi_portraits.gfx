@@ -4,6 +4,26 @@ spriteTypes = {
 		name = "GFX_Papich"
 		texturefile = "gfx/leaders/RIV/Papich.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ZAK_war"
+		texturefile = "gfx/event_pictures/report_event_zak_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_zakarpat_news"
+		texturefile = "gfx/event_pictures/news_event_zakarpat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Brenzovich"
+		texturefile = "gfx/leaders/ZAK/Brenzovich.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Deyak"
+		texturefile = "gfx/leaders/ZAK/Deyak.dds"
+	}
 	spriteType = {
 		name = "GFX_adad"
 		texturefile = "gfx/leaders/VOL/adad.dds"

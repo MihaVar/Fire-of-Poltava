@@ -25,6 +25,32 @@ characters={
 		}
 	}
 	
+	ZAK_Deyak={
+		name="Taras Deyak"
+		portraits={
+			civilian={
+				large="GFX_Deyak"
+			}
+		}
+		country_leader={
+			ideology=militant_nationalism
+			expire="2222.1.1.1"
+		}
+	}
+	
+	ZAK_Brenzovich={
+		name="Vasyl Brenzovich"
+		portraits={
+			civilian={
+				large="GFX_Brenzovich"
+			}
+		}
+		country_leader={
+			ideology=market_liberalism
+			expire="2222.1.1.1"
+		}
+	}
+	
 	CRI_aksyonov = {
 		name="Aksyonov"
 		portraits={

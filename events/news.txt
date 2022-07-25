@@ -1,0 +1,17 @@
+add_namespace = news_event
+news_event = {
+    id = news_event.1
+    title = "Transcarpathian conflict"
+       
+    desc = news_event.1.d
+        
+    picture = GFX_zakarpat_news
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = "This sounds bad."
+        
+    }
+	}

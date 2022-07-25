@@ -1,0 +1,81 @@
+add_namespace = Transcarpathia
+country_event = {
+    id = transcarpathia.1
+    
+    trigger = {
+        has_country_flag = zakarpatya_war
+        
+    }
+    
+    mean_time_to_happen = {
+        days = 35
+        
+    }
+	picture = GFX_ZAK_war
+    
+    fire_only_once = yes
+    hidden = no
+    
+    
+    title = "Opposition storms Rahiv"
+    desc = "Todays morning members of Carpathian Sich stormed Rahiv city administration. We've tried negotiating with them for months but with no luck, the time for diplomacy is out. We need to act, now!"
+    
+    is_triggered_only = yes
+	immediate = { news_event = {
+    id = news_event.1
+    days = 3
+    
+} }
+    
+    option = {
+        name = "Mobilise the troops, immediately!"
+        start_civil_war = {
+   
+    ideology = nationalism
+    size = 0.4
+    only_own_territory = no
+    #capital = 564
+    states = { 
+        564 2247
+    }
+    
+    keep_political_leader = no
+    keep_political_party_members = no
+}
+    set_capital = { state = 1607 }
+    HUN = { set_state_owner = 593
+	set_state_owner = 2246
+	set_state_controller = 593
+	set_state_controller = 2246
+	declare_war_on = { target = ZAK type = annex_everything}
+	
+    }
+	hidden_effect = { HUN = { load_oob = "HUN_2019" } 
+	HUN { declare_war_on = { target = D01 type = annex_everything}}	} }
+	
+	option = {
+        name = "Ja Rusyn - byl, jesm i budu!"
+        start_civil_war = {
+    ruling_party = nationalism
+    ideology = liberal_democracy
+    size = 0.6
+    only_own_territory = no
+    #capital = 564
+    states = { 
+        1607 1608
+    }
+    
+    keep_political_leader = no
+    keep_political_party_members = no
+}
+    set_capital = {state =  1607 }
+    HUN = { set_state_owner = 593
+	set_state_owner = 2246
+	set_state_controller = 593
+	set_state_controller = 2246
+	declare_war_on = { target = ZAK type = annex_everything}
+	
+    }
+	hidden_effect = { HUN = { load_oob = "HUN_2019" }
+    HUN { declare_war_on = { target = D01 type = annex_everything}}	} }
+}

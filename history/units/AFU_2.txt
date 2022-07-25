@@ -34,7 +34,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13607
+		location = 305
 		division_template = "Pikhotna Diviziya"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -46,7 +46,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 13607
+		location = 305
 		division_template = "Pikhotna Diviziya"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1

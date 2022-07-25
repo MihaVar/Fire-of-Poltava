@@ -10,7 +10,7 @@ state={
 		owner = AFU
 		add_core_of = AFU
 		buildings = {
-			infrastructure = 3
+			infrastructure = 3 industrial_complex = 2
 		}
 	}
 	manpower=158305

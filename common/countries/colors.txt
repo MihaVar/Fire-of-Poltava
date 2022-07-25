@@ -150,8 +150,13 @@ GUT = {
 	color_ui = rgb { 160 97 108 }
 }
 
+GUT = {
+	color = rgb { 175 58 0 }
+	color_ui = rgb { 175 58 0 }
+}
+
 GAL = {
-color = rgb {204 38 136 }
+    color = rgb {204 38 136 }
 	color_ui = rgb { 204 38 136 }
 }
 

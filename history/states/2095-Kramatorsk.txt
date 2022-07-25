@@ -11,6 +11,8 @@ state={
 		add_core_of = AFU
 		buildings = {
 			infrastructure = 3
+                        arms_factory = 2
+                        industrial_complex = 3
 		}
 	}
 	manpower=553559
